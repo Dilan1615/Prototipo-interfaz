@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Lector de Contenido</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- Config Tailwind y estilos propios -->
+  <script src="config.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-display">
+  <div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+
+    <!-- HEADER -->
+    <header class="flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4 pb-2 justify-between fixed top-0 left-0 right-0 z-10">
+      <div class="flex size-12 items-center justify-start">
+        <span class="material-symbols-outlined text-zinc-900 dark:text-white text-2xl">arrow_back_ios_new</span>
+      </div>
+
+      <h2 class="text-zinc-900 dark:text-white text-lg font-bold leading-tight flex-1 text-center">Capítulo 5</h2>
+
+      <div class="flex w-12 items-center justify-end gap-2">
+        <button class="icon-btn">
+          <span class="material-symbols-outlined text-2xl">bookmark_border</span>
+        </button>
+        <button class="icon-btn">
+          <span class="material-symbols-outlined text-2xl">more_vert</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="flex-grow pt-20 pb-40">
+
+      <!-- Imagen 1 -->
+      <div class="page-container">
+        <div class="page-panel"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLndPEa9qBKWWBw7T1rTQBqxNSU8S74zuU6FaFcSv3if_DGQwcJkGDduOSb6Wau36uFrPxQx--Id-jvbepWgjU614iCKHjRuF_HJqbvCJLJQovXjMJYCLLZz61RiULu4g5pVxz2XBA9EQKb461nZwbnjIILD3IyaVu58iaLEl5s7hYo5SMGXO5I8-Gn-V80TCIvLZqzoSRu1S2xgFeVsLnzi3aK0HD-t3xSWJFSD-Oq6M7wSWWstXEHQOLInUw1YBeDRX6oodRnn4");'>
+        </div>
+      </div>
+
+      <!-- Imagen 2 -->
+      <div class="page-container">
+        <div class="page-panel"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQy_B0HbI3hME5bRcXX2M4x5RqC4AnTrvYleRMyaNlGQPryrKnobgQ7Lax1hb6uETN8Uh1wMXnmPNOP3z62ndStRqNrgy2l6qmmRhiIX9FPTjWuDMaLbCkz28hTtGAeSMiCKL1nyUlnMyGhRxhPZzVkTIxzwuB10ig509bjRmalze1alUpxn5wBqARdURitDGq8RsHqCRJcPLPoWJJxx8eg2uoQGypCdT-vAlr5Qn1PIfRGFEgWniuYRnUSWizcyD6qpGUFiFqc3k");'>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="fixed bottom-0 left-0 right-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+
+      <!-- Progreso -->
+      <div class="progress-container">
+        <p class="text-zinc-900 dark:text-white text-base font-medium">Página 24 / 48</p>
+
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+          <div class="progress-thumb"></div>
+        </div>
+      </div>
+
+      <!-- Navegación -->
+      <div class="flex justify-stretch">
+        <div class="flex flex-1 gap-3 px-4 pb-6 pt-1">
+          <button class="nav-btn">
+            <span>&lt; Cap. 4</span>
+          </button>
+          <button class="nav-btn">
+            <span>Cap. 6 &gt;</span>
+          </button>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="config.js"></script>
+</body>
+</html>

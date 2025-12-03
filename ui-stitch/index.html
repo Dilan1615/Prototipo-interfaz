@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio/Explorar Biblioteca</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Config Tailwind -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1337ec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101322",
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="flex items-center p-4 pb-2 justify-between">
+        <span class="material-symbols-outlined text-gray-800 dark:text-white" style="font-size:28px;">import_contacts</span>
+
+        <h1 class="text-gray-900 dark:text-white text-lg font-bold flex-1 text-center">Inicio</h1>
+
+        <button class="h-10 w-10 text-gray-800 dark:text-white">
+          <span class="material-symbols-outlined">account_circle</span>
+        </button>
+      </div>
+
+      <!-- Buscador -->
+      <div class="px-4 py-3">
+        <label class="flex h-12 w-full">
+          <div class="flex w-full items-center rounded-xl bg-gray-200 dark:bg-gray-800">
+            <span class="material-symbols-outlined text-gray-500 dark:text-gray-400 pl-4">search</span>
+            <input
+              class="form-input flex-1 rounded-xl bg-gray-200 dark:bg-gray-800 px-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none"
+              placeholder="Buscar manga, novelas, libros..." />
+          </div>
+        </label>
+      </div>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="flex-1 pb-24">
+
+      <!-- Continuar Leyendo -->
+      <h2 class="seccion">Continuar Leyendo</h2>
+
+      <div class="carousel">
+        <div class="carousel-items">
+
+          <!-- ITEM 1 -->
+          <div class="item">
+            <div class="cover" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDni32akiS4gGKQKDTyhlZHTI9UkC9g4Y9TQhJMt-MXSAifyzWbVxKZkpbOiX9iagXk1l794IiVj5MIGyPtxTcYJXR07yKvznrrH6IK1r-qj3yNGqVkAgjLzwMjYW0fndXYEZzkEGz8Gt556MfK0-Y0A7ObcwqM3qwV8RZOZf2-p0M1n9PhyJSXxFuHaSpmKtNoi5nhlv-PVQbR3icjJhR0es698rRCTHqw_KONAE4jEgB197syIkahDY8lfMbI0wJcxcbHv3k_AlU');"></div>
+            <p class="titulo">El Ultimo Deseo</p>
+            <div class="barra">
+              <div class="progreso" style="width:75%"></div>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="item">
+            <div class="cover" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXu5g2aAPjQAGO7KO2zzpimeGUaTs5WcANwk_P-xZKdOqnUjP09zwqthUWIr7IUhed0fdm7Aoq4J_-cqKXSZ8ECXFzlV-P-RoRD3fg-yshVZqIpmNmJ_BfQM5E4xl27TW_xwjayXOK7ok4cM6_G55etwjwecVgMCVmHCpBi-IL959rzUP1GaVoKd64hOVNrF6_c2TDFeYkNn-z5awpe9mhKbj_88pSNpLwOXcfV8tN21TBeZAr_iWFvjqkzxgXH7ZSadWyMYBlwVc');"></div>
+            <p class="titulo">Ataque a los Titanes</p>
+            <div class="barra">
+              <div class="progreso" style="width:30%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Manga Popular -->
+      <h2 class="seccion">Manga Popular</h2>
+
+      <div class="carousel">
+        <div class="carousel-items">
+
+          <div class="item">
+            <div class="cover" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4ff9biY92LT1zmuDDwZ1BComtrCWyhzCcyO980SUdvDU7koOw6sQCQu_NTl8mHLfvVNTd4ThK2MiEvfLiptlBbrfsSb6nPGfaZz8kjBOWN43Vob_xIDbwNi4GuSSes2t8B8WV6_duKkfPSjsu1c_5xCK8Ed6uo-NwKkV42kU7270SV9ep8op69La0pSTVH73R8tFD5oM8Sf6fKP9dPAC2blbeoVhWJuE-qUeOO2gqDviskNpcYwQd9oQY6XsGXhT1hqzyEDcCyQg');"></div>
+            <p class="titulo">Your Lie in April</p>
+            <p class="autor">Naoshi Arakawa</p>
+          </div>
+
+          <div class="item">
+            <div class="cover" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbTdQ1BN_ZFyh0hVrdL5r9ien_iqpyE3Y3boQvxZUfRimZLX0uJVJhBzbS5PRcpUokFjRD94AfacW1TmavFcu5HpWXdbH7ykSlZuBnkSQLPTAgeVVMD1FnjH2UZYxqah44MsRB_t2FY4mgpEnNQnvNBJk4q4kac7NmJEWG89FJt3T8jv9KU4ZuPh7RuSbdpAUmFpZeBc04e-3ftEjzLknnV5kFTdNPKS56iuivDjI5WKZdFzUygknpBISZzH9pzKJ93HBMGxClf1o');"></div>
+            <p class="titulo">Berserk</p>
+            <p class="autor">Kentaro Miura</p>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Perfil de Usuario</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Lexend -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- Iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind config -->
+    <script src="js/config.js"></script>
+
+    <!-- Estilos extra -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+
+        <!-- Header -->
+        <div class="flex items-center bg-background-light/80 dark:bg-background-dark/80 p-4 sticky top-0 z-10 backdrop-blur-sm">
+            <div class="flex size-12 shrink-0 items-center justify-start">
+                <span class="material-symbols-outlined text-zinc-900 dark:text-white">arrow_back</span>
+            </div>
+            <h1 class="flex-1 text-center text-lg font-bold text-zinc-900 dark:text-white">
+                Editar Perfil
+            </h1>
+            <div class="flex w-12 items-center justify-end"></div>
+        </div>
+
+        <div class="flex flex-col p-4 gap-6">
+
+            <!-- Avatar -->
+            <div class="flex flex-col items-center gap-4">
+                <div class="relative">
+                    <div class="avatar"></div>
+                    <button class="edit-btn">
+                        <span class="material-symbols-outlined">edit</span>
+                    </button>
+                </div>
+                <p class="text-zinc-500 dark:text-zinc-400 text-sm">Toca el icono para cambiar tu foto</p>
+            </div>
+
+            <!-- Form -->
+            <div class="flex flex-col gap-4">
+                <div>
+                    <label class="label" for="username">Nombre de Usuario</label>
+                    <input class="input" id="username" type="text" value="Alex Serrano" />
+                </div>
+
+                <div>
+                    <label class="label" for="password">Contraseña</label>
+                    <input class="input" id="password" type="password" value="••••••••" />
+                </div>
+
+                <div>
+                    <label class="label" for="confirm-password">Confirmar Contraseña</label>
+                    <input class="input" id="confirm-password" type="password" placeholder="Confirma tu nueva contraseña" />
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="flex flex-col gap-4 mt-4">
+                <button class="btn-primary">Guardar Cambios</button>
+                <button class="btn-secondary">Cancelar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

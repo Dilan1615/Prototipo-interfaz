@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Detalles del Título</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+      font-size: 24px;
+    }
+  </style>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1337ec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101322",
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div
+      class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+      <button class="flex size-12 shrink-0 items-center justify-center text-slate-800 dark:text-white">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </button>
+      <h2 class="text-slate-800 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
+        Detalles del Título</h2>
+      <div class="flex w-12 items-center justify-end">
+        <button
+          class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-slate-800 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+          <span class="material-symbols-outlined">bookmark_border</span>
+        </button>
+      </div>
+    </div>
+    <div class="@container">
+      <div class="@[480px]:px-4 @[480px]:py-3 px-4">
+        <div
+          class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-[#111218] rounded-xl min-h-80"
+          data-alt="Cover art for the title Shingeki no Kyojin"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCyE2tQxYe1_OdW4--N6v8NWLhl6KZXEU4wUNbEgqHbKSqXboKkDoYZPx_A3hxZ4BWnyBehUg6mSc6dyGatOcGg15j1lhJ6qmQJf5zByzDqXpUN7dXK-76ZQSnyTBmAc9MeYQp-z1ltBjaicQHxBxN3HuqGEH2j4BpBZ_8H1EpC8xnvx8ez_WNK_fygjLM0g-k0zkJ03gjIPrGxHsHrW2262mvGLMFyx1BNXQFJxLq_TAqs8gPsxeUVvIVMs8bh0N_i9VMO_DDiLL0");'>
+        </div>
+      </div>
+    </div>
+    <h1
+      class="text-slate-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-1 pt-4">
+      Shingeki no Kyojin</h1>
+    <p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal pb-3 px-4">Hajime Isayama</p>
+    <div class="flex gap-2 p-4 pt-1 flex-wrap">
+      <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 pl-4 pr-4">
+        <p class="text-primary text-sm font-medium leading-normal">Shonen</p>
+      </div>
+      <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 pl-4 pr-4">
+        <p class="text-primary text-sm font-medium leading-normal">Acción</p>
+      </div>
+      <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 pl-4 pr-4">
+        <p class="text-primary text-sm font-medium leading-normal">Fantasía Oscura</p>
+      </div>
+    </div>
+    <div class="px-4 py-4">
+      <button
+        class="w-full flex h-12 items-center justify-center rounded-lg bg-primary text-white font-bold text-base leading-normal">Comenzar
+        a Leer</button>
+    </div>
+    <div class="px-4 py-2">
+      <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Sinopsis</h3>
+      <p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+        Hace más de 100 años, la humanidad fue casi exterminada por los titanes. Un pequeño porcentaje de la humanidad
+        sobrevivió amurallándose en una ciudad protegida por muros de 50 metros de altura, más altos que el mayor de los
+        titanes. La ciudad no ha visto a ningún titán en más de 100 años, hasta que un día, un titán colosal aparece...
+        <a class="text-primary font-medium" href="#">Leer más</a>
+      </p>
+    </div>
+    <div class="px-4 py-4 mt-4">
+      <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Calificación</h3>
+      <div class="flex items-center justify-between p-4 rounded-xl bg-slate-100 dark:bg-slate-800/50">
+        <div class="flex flex-col">
+          <span class="text-4xl font-bold text-slate-900 dark:text-white">4.8</span>
+          <span class="text-sm text-slate-500 dark:text-slate-400">de 2,345 reseñas</span>
+        </div>
+        <div class="flex items-center space-x-1 text-primary">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined">star_half</span>
+        </div>
+      </div>
+    </div>
+    <div class="px-4 py-4">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Comentarios</h3>
+        <a class="text-primary text-sm font-medium" href="#">Ver todos</a>
+      </div>
+      <div class="flex items-start space-x-3 mb-6">
+        <img alt="Avatar de usuario actual" class="w-10 h-10 rounded-full"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd_ntV5Da4tkgXO9R7NIW0pxF2ghVsLGWRgsubG2e4ybP9NjeTgGncrHhWdVC7PMq2kmFWy4vrncWihT3pSpXcF2ZO17WPXTWSQEItjf0hLIfYk1blF6cvnsf5nD7B0wL7hbo5jidGlF-_QsoB5wZ0OcyiQoZNpatySN-D1qAgPFR27hty16K_G4uxQChSBHyYbqs7-7pnG6x9BMs6C1SIBSZUuF6A770e1OfLxawvxEuKRE3sv3NfA9sQd9i_F_hY2tqbu3QR34E" />
+        <div class="flex-1 relative">
+          <textarea
+            class="w-full p-3 pr-12 rounded-lg bg-slate-100 dark:bg-slate-800/50 text-slate-800 dark:text-slate-200 placeholder-slate-500 border-transparent focus:border-primary focus:ring-primary"
+            placeholder="Escribe tu reseña..." rows="1"></textarea>
+          <button
+            class="absolute right-2 top-1/2 -translate-y-1/2 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-white">
+            <span class="material-symbols-outlined" style="font-size: 20px;">send</span>
+          </button>
+        </div>
+      </div>
+      <div class="space-y-6">
+        <div class="flex items-start space-x-3">
+          <img alt="Avatar de usuario" class="w-10 h-10 rounded-full"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO7qgTVBrB_m4Q0ScH-iQkm28BzsbRX153GlY8vb21VfDn4DL1D1AoOCB8ZspxKJryFAy15wuJfHeIWqw6ajmqK3luG8Du8fnejV6fUy80LG2HkAQFKXRZ_uGnmrBiysWxnabMLnG_XmoxrENU4M2Uv_TeqxstSEG3ROuvqnJq8pHHd7LxDNEiLcqOLM-o7JMe7nA3ESpUJXUbBoGdbw_wWKW1nk8_xk4ri70Ns4uQ5bBbNMOPgeUEeMlObmI9DTECWqWtJUds07M" />
+          <div class="flex-1">
+            <div class="bg-slate-100 dark:bg-slate-800/50 rounded-xl p-3">
+              <div class="flex items-baseline justify-between">
+                <p class="font-semibold text-slate-900 dark:text-white">Carlos R.</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400">hace 2 horas</p>
+              </div>
+              <p class="text-slate-700 dark:text-slate-300 mt-1">¡Increíble! La trama es simplemente espectacular. No
+                puedo esperar a ver cómo continúa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-start space-x-3">
+          <img alt="Avatar de usuario" class="w-10 h-10 rounded-full"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDNo_uK2-GiGOV6SjSFnUHAEMZ3ZaRb5TgT6Kf2LpcQm3088obvPr82mkTu29KBPdbi6dh1uniYOMnRs_otEXI8z3M85eOMlPU1rqyb3mKlnPTfjGOyqFnf7Xm-y9tikYxqC3mHKiUsPhBe741TeOitOn28C24NbxB7e1BtQs9_zOYLeobhkwukgw2HJLpGkyPZ9hXUxzKFXyKNQ5dZgYjI9mQfwLKbASrrfXKPkj_vJ67IjioUIa64Hwmebj52aOpXAtlaBwU3gY" />
+          <div class="flex-1">
+            <div class="bg-slate-100 dark:bg-slate-800/50 rounded-xl p-3">
+              <div class="flex items-baseline justify-between">
+                <p class="font-semibold text-slate-900 dark:text-white">Ana G.</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400">hace 1 día</p>
+              </div>
+              <p class="text-slate-700 dark:text-slate-300 mt-1">El desarrollo de personajes es de lo mejor que he leído
+                en mucho tiempo. Totalmente recomendado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h-10"></div>
+  </div>
+
+</body>
+
+</html>

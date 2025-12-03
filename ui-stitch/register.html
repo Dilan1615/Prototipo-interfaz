@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Usuario</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <!-- Configuracion Tailwind -->
+  <script src="js/config.js"></script>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+
+  <div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+
+    <div class="@container">
+      <div class="@[480px]:px-4 @[480px]:py-3">
+        <div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-background-light dark:bg-background-dark @[480px]:rounded-lg min-h-[218px]"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSLe04Sk_ab5FtlHaKVe41eUKYQfJZ5aQ_d_V-fkLi48F7GgD6JSZ2IDYyCF1D4z-8Xj1YjhE8eu882KLO0CWsLeut_JydX_evzYVcBffdIbsWLoh5fUTZRhnqQSAqWShcrZLfdUtQB-644fR0JPByemd6GYCteou54ZnxLZSmNOL3D34fCuTWAzSPBfYo1oRHO-0MtOr22ZhCpqaJqXvacRy9fFozdyAyuIxFRwZvDpciMMf59_P1kEbPoHVeGUsWgMfzGcna_h0");'>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="text-slate-900 dark:text-white text-[32px] font-bold text-center pb-3 pt-6">
+      Crea tu cuenta
+    </h1>
+
+    <div class="flex flex-col gap-4 px-4 py-3">
+
+      <!-- Nombre -->
+      <label class="flex flex-col w-full">
+        <p class="text-slate-0 dark:text-white font-medium pb-2">Nombre</p>
+        <div class="relative">
+          <span class="material-symbols-outlined icon-left">person</span>
+          <input class="input-base" placeholder="Nombre completo" type="text" id="nombre" />
+        </div>
+      </label>
+
+      <!-- Correo -->
+      <label class="flex flex-col w-full">
+        <p class="text-slate-800 dark:text-white font-medium pb-2">Correo electronico</p>
+        <div class="relative">
+          <span class="material-symbols-outlined icon-left">mail</span>
+          <input class="input-base" placeholder="tu.correo@ejemplo.com" type="email" id="correo" />
+        </div>
+      </label>
+
+      <!-- Password -->
+      <label class="flex flex-col w-full">
+        <p class="text-slate-800 dark:text-white font-medium pb-2">Contrasena</p>
+        <div class="relative">
+          <span class="material-symbols-outlined icon-left">lock</span>
+          <input class="input-base pr-12" placeholder="Crea una contrasena" type="password" id="pass" />
+          <button class="icon-btn" data-target="pass">
+            <span class="material-symbols-outlined">visibility</span>
+          </button>
+        </div>
+      </label>
+
+      <!-- Confirm Password -->
+      <label class="flex flex-col w-full">
+        <p class="text-slate-800 dark:text-white font-medium pb-2">Confirmar contrasena</p>
+        <div class="relative">
+          <span class="material-symbols-outlined icon-left">lock</span>
+          <input class="input-base pr-12" placeholder="Confirma tu contrasena" type="password" id="pass2" />
+          <button class="icon-btn" data-target="pass2">
+            <span class="material-symbols-outlined">visibility_off</span>
+          </button>
+        </div>
+      </label>
+
+    </div>
+
+    <div class="flex flex-col items-center gap-4 px-4 py-6">
+      <button id="btnRegistro" class="btn-primary">Registrarse</button>
+      <p class="text-sm text-slate-600 dark:text-slate-400">
+        Ya tienes una cuenta?
+        <a class="font-semibold text-primary hover:underline" href="#">Inicia sesion</a>
+      </p>
+    </div>
+
+    <div class="px-4 py-4 text-center">
+      <p class="text-xs text-slate-500 dark:text-slate-500">
+        Al registrarte aceptas nuestros
+        <a class="font-medium text-primary/80 hover:underline" href="#">Terminos y Condiciones</a>.
+      </p>
+    </div>
+
+  </div>
+</body>
+
+</html>
